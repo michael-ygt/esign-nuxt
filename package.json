@@ -7,9 +7,11 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "start": "nuxt start",
-    "pretty": "prettier --no-config --write **/*.{js,json,css,md,vue}"
+    "pretty": "prettier --no-config --write '**/*.{js,json,css,md,vue}'"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
