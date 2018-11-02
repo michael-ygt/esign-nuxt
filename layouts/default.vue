@@ -4,30 +4,7 @@
 
     <main class="container p-0 flex-grow sm:py-8 sm:px-4">
       <div class="fadeInUp max-w-md mx-auto bg-grey-lighter sm:shadow-lg sm:rounded leading-normal">
-        <div class="background--gradient--primary text-white p-4 sm:p-8 border-b-8 border-blue-dark sm:rounded-t">
-          <div class="flex justify-between">
-            <span class="sm:text-lg opacity-50">
-              Booking reservation
-            </span>
-
-            <div class="leading-tight text-right text-sm ml-4 mb-4 rb-updated-by">
-              <div class="text-xs opacity-50">
-                Confirmed by
-              </div>
-              Joe La Manga
-            </div>
-          </div>
-
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between">
-            <div class="text-2xl sm:text-4xl leading-tight">
-              Hotel La Manga
-            </div>
-          </div>
-        </div>
-
-        <div class="px-4 sm:px-8 py-8">
-          <nuxt/>
-        </div>
+        <nuxt/>
       </div>
     </main>
 
