@@ -11,9 +11,9 @@
 
       <div class="flex flex-col text-right">
         <a
-          href="tel:+44000000000"
+          href="tel:08000436644"
           class="whitespace-nowrap leading-normal text-white text-lg sm:text-2xl no-underline font-bold">
-          000000000
+          0800 043 6644
         </a>
         <a
           href="mailto:cs@yourgolftravel.com"

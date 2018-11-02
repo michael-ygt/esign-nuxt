@@ -84,7 +84,7 @@ export default {
     return {
       title: "Hotel La Manga Club",
       confirmedBy: "Joe La Manga",
-      bookingNumber: "000000000",
+      bookingNumber: "371117-020518",
       customer: "Roger Correia",
       bookingDate: "September 28, 2018",
       arrivalDate: "May 2, 2019",
