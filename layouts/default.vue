@@ -1,55 +1,73 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="background background--gradient--secondary flex flex-col flex-grow">
+    <Header/>
+
+    <main class="container p-0 flex-grow sm:py-8 sm:px-4">
+      <div class="fadeInUp max-w-md mx-auto bg-grey-lighter sm:shadow-lg sm:rounded leading-normal">
+        <div class="background--gradient--primary text-white p-4 sm:p-8 border-b-8 border-blue-dark sm:rounded-t">
+          <div class="flex justify-between">
+            <span class="sm:text-lg opacity-50">
+              Booking reservation
+            </span>
+
+            <div class="leading-tight text-right text-sm ml-4 mb-4 rb-updated-by">
+              <div class="text-xs opacity-50">
+                Confirmed by
+              </div>
+              Joe La Manga
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+            <div class="text-2xl sm:text-4xl leading-tight">
+              Hotel La Manga
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 sm:px-8 py-8">
+          <nuxt/>
+        </div>
+      </div>
+    </main>
+
+    <Footer/>
   </div>
 </template>
 
+<script>
+import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
+
+export default {
+  components: { Header, Footer }
+};
+</script>
+
 <style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+@screen sm {
+  .background {
+    min-height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 400px 200px -300px rgba(0, 0, 0, 0.08);
+  }
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.background--gradient--primary {
+  background-image: linear-gradient(
+    to top left,
+    config("colors['blue-dark']"),
+    config("colors.blue")
+  );
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.background--gradient--secondary {
+  background-image: linear-gradient(
+    to top left,
+    config("colors['green-dark']"),
+    config("colors.green")
+  );
 }
 </style>
