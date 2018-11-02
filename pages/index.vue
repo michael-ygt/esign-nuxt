@@ -69,7 +69,18 @@
               {{ line }}
             </li>
           </ul>
+
+          <span class="uppercase text-sm font-bold leading-normal tracking-wide cursor-pointer select-none px-3 py-2 rounded mr-4">
+            Approve &#10004;
+          </span>
+          <span class="uppercase text-sm font-bold leading-normal tracking-wide cursor-pointer select-none px-3 py-2 rounded">
+            Reject &#10008;
+          </span>
         </div>
+      </div>
+
+      <div class="text-center">
+        <button class="button button--primary">Confirm reservation</button>
       </div>
     </div>
   </div>
@@ -127,5 +138,21 @@ export default {
     config("colors['blue-dark']"),
     config("colors.blue")
   );
+}
+
+.button {
+  @apply inline-block font-bold px-4 py-2 rounded shadow leading-normal tracking-wide select-none;
+}
+
+.button--primary:active {
+  @apply shadow-none;
+}
+.button--primary {
+  @apply bg-blue-dark text-white;
+}
+
+.button--primary:focus,
+.button--primary:hover {
+  @apply bg-blue outline-none shadow-md;
 }
 </style>
