@@ -25,6 +25,7 @@ export default {
 @screen sm {
   .background {
     min-height: 100%;
+    background-image: url("https://storage.googleapis.com/site-assets-reviews/images/bg-ygt.jpg") !important;
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
