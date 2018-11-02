@@ -50,7 +50,7 @@
         v-for="(item, i) in items"
         :key="i"
         class="-mx-4 sm:mx-0 mb-8 bg-white border border-solid border-grey-lighter shadow sm:rounded">
-        <div class="js-itinerary-item-header flex items-center cursor-pointer select-none py-4 mx-4 border-b border-grey-lighter">
+        <div class="flex items-center py-4 mx-4 border-b border-grey-lighter">
           <div class="flex-1 mr-4 sm:mr-0 leading-tight">
             <div class="flex">
               <div class="flex-1 font-bold sm:font-normal text-xl sm:text-2xl">
@@ -119,3 +119,13 @@ export default {
   }
 };
 </script>
+
+<style>
+.background--gradient--primary {
+  background-image: linear-gradient(
+    to top left,
+    config("colors['blue-dark']"),
+    config("colors.blue")
+  );
+}
+</style>

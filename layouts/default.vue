@@ -32,19 +32,28 @@ export default {
   }
 }
 
-.background--gradient--primary {
-  background-image: linear-gradient(
-    to top left,
-    config("colors['blue-dark']"),
-    config("colors.blue")
-  );
-}
-
 .background--gradient--secondary {
   background-image: linear-gradient(
     to top left,
     config("colors['green-dark']"),
     config("colors.green")
   );
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
 }
 </style>
